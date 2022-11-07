@@ -1,0 +1,244 @@
+*{
+    margin: 0;
+    padding: 0;
+  }
+  
+  a{
+    color: #fff;  
+    text-decoration: none;
+    transition: 0.3s;
+  }
+  
+  a:hover{
+      opacity: 0.7;
+  }
+  
+  .logo{
+    font-size: 24px; 
+    text-transform: uppercase; 
+    letter-spacing: 4px;
+  }
+  
+  nav{
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      background: #23232e;
+      height: 8vh;
+      position: fixed;
+      width: 100%;
+      z-index: 1;
+  }
+  
+  .nav-list{
+      list-style: none;
+      display: flex;
+  }
+  
+  .nav-list li{
+      letter-spacing: 3px;
+      margin-left: 32px;
+  }
+  .mobile-menu{
+      display: none;
+      cursor:pointer;
+  }
+  
+  .mobile-menu div{
+      width: 32px;
+      height: 2px;
+      background: #fff;
+      margin: 8px;
+
+
+      position: fixed;
+  }
+  
+  @media (max-width: 999px) {
+      body{
+        overflow-x: hidden;  
+      }
+      .nav-list {
+       position: absolute; 
+       top: 8vh;  
+       right: 0;
+       width: 50vw;
+       height: 92vh;
+       background: #23232e;
+       flex-direction: column;
+       align-items: center;
+       justify-content: space-around;
+       transform: translateX(100%);
+       transition: transform 0.3s ease-in;
+      }
+      .nav-list li {
+        margin-left: 0;  
+        opacity: 0;
+      }
+      .mobile-menu{
+         display: block; 
+      }
+  }
+  
+  .nav-list.active {
+      transform: translateX(0 );
+  }
+  
+  @keyframes navLinkFade {
+        from {
+          opacity: 0;
+          transform: translateX (50px);
+        }
+        to {
+          opacity: 1;
+          transform: translateX(0);
+        }
+  }
+  
+  .mobile-menu.active .line1 {
+   transform: rotate(-45deg) translate(-8px,8px);
+  }
+  
+  .mobile-menu.active .line2{
+   opacity: 0;
+  }
+  
+  .mobile-menu.active .line3{
+   transform: rotate(45deg) translate(-5px, -7px);   
+  }
+  
+  #verdepraça{
+    position: absolute;
+    top: 100px;
+    width: 400px;
+    height: 60px;
+    z-index: -3;
+    left: 480px;
+    border-radius: 100px;
+    margin-top: 30px;
+    background-color: rgba(44, 108, 33, 0.67);
+  }
+
+  #TH{
+    position: absolute;
+    top:130px;
+    left: 570px;
+    font-size: 50px;
+  }
+
+  #cinza1{
+    background-color: gray;
+    height: 200px;
+    width: 250px;
+    position: absolute;
+    top: 220px;
+    left: 150px;
+    border-radius: 30px;
+  }
+
+  #cinza2{
+    background-color: gray;
+    height: 200px;
+    width: 250px;
+    position: absolute;
+    top: 220px;
+    left: 560px;
+    border-radius: 30px;
+  }
+
+  #cinza3{
+    background-color: gray;
+    height: 200px;
+    width: 250px;
+    position: absolute;
+    top: 220px;
+    left: 950px;
+    border-radius: 30px;
+  }
+  
+  #P1{
+    height: 120px;
+    width: 250px;
+    position: absolute;
+    top: 260px;
+    left:150px;
+    border-radius: 10px;
+  }
+
+  #NP1{
+   position: absolute;
+   font-size: 20px;
+   left: 190px;
+   top: 230px;
+   font-weight: bold;
+  }
+
+  #EP1{
+   position: absolute;
+   font-size: 15px;
+   left: 245px;
+   top: 390px;
+  }
+
+
+  #P2{
+    height: 120px;
+    width: 250px;
+    position: absolute;
+    top: 260px;
+    left:560px;
+    border-radius: 10px;
+  }
+
+  #NP2{
+   position: absolute;
+   font-size: 20px;
+   left: 600px;
+   top: 230px;
+   font-weight: bold;
+  }
+
+  #EP2{
+    position: absolute;
+    font-size: 15px;
+    left: 600px;
+    top: 390px;
+  }
+
+  #P3{
+    height: 120px;
+    width: 250px;
+    position: absolute;
+    top: 260px;
+    left: 950px;
+    border-radius: 10px;
+  }
+
+  #NP3{
+    position: absolute;
+   font-size: 20px;
+   left: 1030px;
+   top: 230px;
+   font-weight: bold;
+  }
+
+  #EP3{
+    position: absolute;
+    font-size: 15px;
+    left: 1030px;
+    top: 390px;
+  }
+
+ 
+  footer{
+    background-color: black;
+    width: 100%;
+    height: 300px;
+    position: absolute;
+    top: 500px;
+  }
+
+  #rodapé{
+    width: 100%;
+  }
